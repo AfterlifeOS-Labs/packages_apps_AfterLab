@@ -364,4 +364,12 @@
         <item>6</item>
         <item>7</item>
     </string-array>
+
+    <!-- array controller qs custom header -->
+    <string-array name="qs_custom_header_style_entries">
+        <item>@string/qs_custom_header_style_anim</item>
+    </string-array>
+    <string-array name="qs_custom_header_style_values">
+        <item>0</item>
+    </string-array>
 </resources>
