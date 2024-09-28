@@ -622,4 +622,8 @@
     <string name="qs_custom_header_style_title">QS Custom Header Style</string>
     <string name="qs_custom_header_summary">switch for enable qs custom header</string>
     <string name="qs_custom_header_title">QS Custom Header</string>
+    
+    <!-- QS Weather -->
+    <string name="qs_weather_enabled_title">QS Weather</string>
+    <string name="qs_weather_enabled_summary">switch for disable qs weather</string>
 </resources>
