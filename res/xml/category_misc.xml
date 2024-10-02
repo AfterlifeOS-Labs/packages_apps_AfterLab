@@ -49,13 +49,18 @@
         android:key="Sound"
         android:title="@string/sound_category">
 
-        <!-- Sound Engine -->
         <Preference
-          android:key="sound_engine"
-          android:title="@string/sound_engine_title"
-          android:summary="@string/sound_engine_summary"
-          settings:layout="@layout/afterlab_card_preference_single"
-          android:fragment="com.afterlife.afterlab.fragments.SoundEngine" />
+            android:key="dolby_audio"
+            android:title="@string/afterlife_echo_title"
+            android:summary="@string/afterlife_echo_summary"
+            settings:layout="@layout/afterlab_card_preference_single">
+
+            <intent
+                android:targetPackage="com.afterlifeos.echo.after"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.afterlifeos.echo.after.DolbyActivity" />
+
+         </Preference>
 
     </PreferenceCategory>
 

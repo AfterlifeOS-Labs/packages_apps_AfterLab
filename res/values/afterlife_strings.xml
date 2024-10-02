@@ -625,7 +625,11 @@
     
     <!-- QS Weather -->
     <string name="qs_weather_enabled_title">QS Weather</string>
-    <string name="qs_weather_enabled_summary">switch for disable qs weather</string>
+    <string name="qs_weather_enabled_summary">Show weather info Quick Settings</string>
+
+    <!-- QS Data Usage -->
+    <string name="qs_show_data_usage_title">Show data usage</string>
+    <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS header</string>
 
     <!-- Status bar padding -->
     <string name="statusbar_padding">Status bar padding</string>
@@ -652,4 +656,9 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
     <string name="unit_seconds">seconds</string>
+
+    <!-- Afterlife Echo -->
+    <string name="afterlife_echo_title">After Echo</string>
+    <string name="afterlife_echo_summary">Tune and optimize your audio quality</string>
+
 </resources>
