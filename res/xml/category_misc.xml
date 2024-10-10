@@ -46,6 +46,25 @@
      </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="Sound"
+        android:title="@string/sound_category">
+
+        <Preference
+            android:key="dolby_audio"
+            android:title="@string/afterlife_echo_title"
+            android:summary="@string/afterlife_echo_summary"
+            settings:layout="@layout/afterlab_card_preference_single">
+
+            <intent
+                android:targetPackage="com.afterlifeos.echo.after"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.afterlifeos.echo.after.DolbyActivity" />
+
+         </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="miscellaneous_spoofing_category"
         android:title="@string/miscellaneous_spoofing_category">
 
