@@ -22,6 +22,7 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -48,6 +49,9 @@ import java.util.List;
 public class Misc extends SettingsPreferenceFragment 
             implements Preference.OnPreferenceChangeListener {
     
+    private static final String KEY_SOUND_CATEGORY = "sound_category";
+    private static final String KEY_DOLBY = "dolby_audio";
+    
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -55,11 +59,27 @@ public class Misc extends SettingsPreferenceFragment
         PreferenceScreen prefSet = getPreferenceScreen();
         final Resources res = getResources();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        boolean isDolbyEnabled = SystemProperties.getBoolean("ro.dolby.enabled", false);
+        setDolbyVisibility(isDolbyEnabled);
     }
     
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
+    }
+
+    private void setDolbyVisibility(boolean isDolbyEnabled) {
+        PreferenceCategory soundCategory = findPreference(KEY_SOUND_CATEGORY);
+        Preference dolbyMenu = findPreference(KEY_DOLBY);
+
+        if (soundCategory != null) {
+            soundCategory.setVisible(isDolbyEnabled);
+        }
+        
+        if (dolbyMenu != null) {
+            dolbyMenu.setVisible(isDolbyEnabled);
+        }
     }  
 
     @Override

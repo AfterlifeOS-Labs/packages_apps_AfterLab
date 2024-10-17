@@ -47,7 +47,8 @@
 
     <PreferenceCategory
         android:key="Sound"
-        android:title="@string/sound_category">
+        android:title="@string/sound_category"
+        android:key="sound_category">
 
         <!-- AfterEchoe -->
         <Preference
