@@ -629,6 +629,7 @@
     <!-- Afterlife QS Custom -->
     <string name="cat_qs_custom_header">Afterlife Qs Custom</string>
     <string name="qs_custom_style_anim">Animation Style</string>
+    <string name="qs_custom_style_hyper">HyperOS Style</string>
     <string name="qs_custom_style_title">Select Your Style</string>
     <string name="qs_custom_summary">switch for enable Afterlife qs custom</string>
     <string name="qs_custom_title">Custom Qs Style</string>
@@ -673,7 +674,7 @@
     <string name="afterlife_echo_summary">Tune and optimize your audio quality</string>
 
     <!-- QS tile shape -->
-    <string name="qs_tile_shape">QS tile shape (SystemUI restart required)</string>
+    <string name="qs_tile_shape">QS tile shape</string>
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
